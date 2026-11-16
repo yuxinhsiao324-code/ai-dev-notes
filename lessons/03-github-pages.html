@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>用 GitHub Pages 發佈 | AI 協作開發小講義</title>
+  <meta name="description" content="把靜態網站免費放上網路，三步驟完成。">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="../index.html">← AI 協作開發小講義</a>
+  </header>
+
+  <main>
+    <h1>用 GitHub Pages 發佈</h1>
+    <p class="meta">難度：入門｜閱讀時間：4 分鐘</p>
+
+    <section class="goal">
+      <h2>學習目標</h2>
+      <ul>
+        <li>知道 GitHub Pages 是什麼</li>
+        <li>能把一個靜態網站推上 GitHub 並公開</li>
+        <li>知道網址長什麼樣子</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>一句話定義</h2>
+      <p>GitHub Pages 是 GitHub 提供的免費靜態網站空間：你把 HTML 推上去，它就替你變成網址。</p>
+    </section>
+
+    <section>
+      <h2>三步驟</h2>
+      <h3>1. 建立 Repository 並推上去</h3>
+      <pre><code>git init
+git add .
+git commit -m "add: 初始專案"
+git branch -M main
+git remote add origin https://github.com/你的帳號/專案名.git
+git push -u origin main</code></pre>
+      <h3>2. 開啟 Pages</h3>
+      <p>Repository → <code>Settings</code> → <code>Pages</code> → Source 選 <code>Deploy from a branch</code>，Branch 選 <code>main</code>、資料夾選 <code>/ (root)</code>，按 Save。</p>
+      <h3>3. 等候並開啟網址</h3>
+      <p>約 1–2 分鐘後，網址為：</p>
+      <pre><code>https://你的帳號.github.io/專案名/</code></pre>
+      <div class="callout warn">網站打開是空白或樣式跑掉？多半是連結用了 <code>/</code> 開頭的絕對路徑。請改成相對路徑。</div>
+    </section>
+
+    <section class="summary">
+      <h2>重點整理與練習</h2>
+      <p><strong>一句話重點：</strong>推上 main 分支、開啟 Pages，靜態網站就有網址了。</p>
+      <p><strong>練習：</strong>把這個專案推上你的 GitHub，並用手機開啟網址確認版面。</p>
+    </section>
+
+    <nav class="pager">
+      <a href="02-prompt-basics.html">← 上一課：提示詞基本功</a>
+      <span class="disabled">下一課 →</span>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    AI 協作開發小講義 ｜ 規則見 AGENTS.md
+  </footer>
+</body>
+</html>
