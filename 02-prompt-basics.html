@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>提示詞基本功 | AI 協作開發小講義</title>
+  <meta name="description" content="用「角色、任務、限制、格式」四要素，寫出 AI 看得懂的需求。">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="../index.html">← AI 協作開發小講義</a>
+  </header>
+
+  <main>
+    <h1>提示詞基本功</h1>
+    <p class="meta">難度：入門｜閱讀時間：5 分鐘</p>
+
+    <section class="goal">
+      <h2>學習目標</h2>
+      <ul>
+        <li>會用四要素組出清楚的需求</li>
+        <li>知道有了 AGENTS.md 後，提示詞可以多短</li>
+        <li>能分辨「好需求」與「模糊需求」</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>四要素</h2>
+      <ol>
+        <li><strong>任務</strong>：要 AI 做什麼。</li>
+        <li><strong>內容</strong>：主題、素材、讀者是誰。</li>
+        <li><strong>限制</strong>：不能做什麼、字數、風格。</li>
+        <li><strong>格式</strong>：希望交付成什麼樣子。</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>範例比較</h2>
+      <h3>模糊的需求</h3>
+      <pre><code>幫我做一個網頁介紹 Git。</code></pre>
+      <h3>清楚的需求</h3>
+      <pre><code>新增一課講義：〈Git 入門〉，給完全沒碰過的新手，
+包含 commit、branch 兩個概念，各附一個指令範例，
+最後一題練習。</code></pre>
+      <div class="callout tip">專案裡已有 AGENTS.md 時，檔名、版型、風格都不用再說，提示詞只需要講「內容」。</div>
+    </section>
+
+    <section>
+      <h2>常見錯誤</h2>
+      <div class="callout warn">一次塞太多任務。建議一次只做一件事，確認結果再繼續。</div>
+      <div class="callout warn">沒有說明限制，AI 就會自己發揮，例如偷偷引入外部套件。</div>
+    </section>
+
+    <section class="summary">
+      <h2>重點整理與練習</h2>
+      <p><strong>一句話重點：</strong>好提示詞 = 任務 + 內容 + 限制 + 格式；重複的部分交給 AGENTS.md。</p>
+      <p><strong>練習：</strong>把「幫我做個作品集」改寫成含四要素的提示詞。</p>
+    </section>
+
+    <nav class="pager">
+      <a href="01-what-is-agents-md.html">← 上一課：什麼是 AGENTS.md</a>
+      <a href="03-github-pages.html">下一課：用 GitHub Pages 發佈 →</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    AI 協作開發小講義 ｜ 規則見 AGENTS.md
+  </footer>
+</body>
+</html>

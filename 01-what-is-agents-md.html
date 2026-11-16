@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>什麼是 AGENTS.md | AI 協作開發小講義</title>
+  <meta name="description" content="用一份規則檔，讓 AI 每次都照同一套方式幫你開發專案。">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="../index.html">← AI 協作開發小講義</a>
+  </header>
+
+  <main>
+    <h1>什麼是 AGENTS.md</h1>
+    <p class="meta">難度：入門｜閱讀時間：5 分鐘</p>
+
+    <section class="goal">
+      <h2>學習目標</h2>
+      <ul>
+        <li>說得出 AGENTS.md 與 CLAUDE.md 是做什麼的</li>
+        <li>知道一份好規則檔該包含哪些內容</li>
+        <li>理解它和「Vibe Coding」的差別</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>一句話定義</h2>
+      <p><code>AGENTS.md</code> 是放在專案根目錄、專門寫給 AI 看的「專案說明書」。AI 開始工作前先讀它，就知道這個專案的目的、結構與規矩。</p>
+      <p><code>CLAUDE.md</code> 是 Claude Code 讀取的同類檔案，用法幾乎一樣。</p>
+      <div class="callout tip">兩個都想支援？讓 <code>CLAUDE.md</code> 只寫一行 <code>@AGENTS.md</code>，規則只維護一份。</div>
+    </section>
+
+    <section>
+      <h2>為什麼需要它</h2>
+      <p>Vibe Coding 的重點是「把這一頁做出來」；規則檔的重點是「之後每一頁都用同一套方式做出來」。</p>
+      <table>
+        <tr><th></th><th>只靠對話</th><th>有 AGENTS.md</th></tr>
+        <tr><td>風格</td><td>每次可能不同</td><td>固定一致</td></tr>
+        <tr><td>檔名／位置</td><td>要重複交代</td><td>寫一次即可</td></tr>
+        <tr><td>換 AI 或新對話</td><td>脈絡全部歸零</td><td>讀檔就接得上</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>一份好規則檔的內容</h2>
+      <ol>
+        <li><strong>專案目的</strong>：這是什麼、給誰看。</li>
+        <li><strong>技術限制</strong>：能用什麼、不能用什麼。</li>
+        <li><strong>檔案結構</strong>：哪些東西放哪裡。</li>
+        <li><strong>風格規範</strong>：顏色、字體、版面。</li>
+        <li><strong>新增內容的流程</strong>：一步一步，AI 照做就好。</li>
+        <li><strong>檢查清單與禁止事項</strong>：完成前自我檢查。</li>
+      </ol>
+      <div class="callout warn">常見錯誤：只寫「請做得漂亮」這種模糊句。規則要<strong>具體、可檢查</strong>，例如「最大寬度 760px」。</div>
+    </section>
+
+    <section class="summary">
+      <h2>重點整理與練習</h2>
+      <p><strong>一句話重點：</strong>規則檔讓 AI 從「聽一次話」變成「長期照規矩做事」。</p>
+      <p><strong>練習：</strong>想一個你的小專案，列出它的 3 條「絕對不可以」規則。</p>
+    </section>
+
+    <nav class="pager">
+      <span class="disabled">← 上一課</span>
+      <a href="02-prompt-basics.html">下一課：提示詞基本功 →</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    AI 協作開發小講義 ｜ 規則見 AGENTS.md
+  </footer>
+</body>
+</html>
